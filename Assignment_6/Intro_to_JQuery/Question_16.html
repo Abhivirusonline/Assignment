@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 16 - Introduction to JQuery</title>
+	<style type="text/css">
+      * {
+         box-sizing: border-box;
+        }
+        label{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        ul li {
+        border: 1px solid #ddd;
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block;
+        position: relative;
+        }
+
+        ul li:hover {
+        background-color: #eee;
+        }
+        li{
+          margin-bottom: 4px;
+        }
+      .close {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          right: 0%;
+          padding: 12px 16px;
+          transform: translate(0%, -50%);
+        }
+        .close:hover {background: #bbb;}
+        button{
+        	padding: 5px;
+        	margin:10px;
+        	background-color: #4dcefa;
+        	border-radius: 5px;
+        }
+	</style>
+</head>
+
+<body>
+	<h1>Question  16</h1>
+<h3>Add cross button on row and bind click function which make a delete request to server, after success event remove the row from dom.</h3>
+<hr>
+<label>Click the button to delete the row</label>
+<ul>
+  <li>ROW 1 <span class="close">&times;</span></li>
+  <li>ROW 2 <span class="close">&times;</span></li>
+  <li>ROW 3 <span class="close">&times;</span></li>
+  <li>ROW 4 <span class="close">&times;</span></li>
+  <li>ROW 5 <span class="close">&times;</span></li>
+</ul>
+<span id="ans"></span>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.close').click(function(e){
+  	$.ajax({url:"./server.php",success:function(result){
+    $(e.target).parent().remove();
+    }});
+  });
+});
+</script>
+</body>
+</html>

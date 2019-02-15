@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 7 - Introduction to JQuery</title>
+	<style type="text/css">
+		button{
+			margin: 10px;
+		}
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+</head>
+
+<body>
+	<h1>Question 7</h1>
+<h3>Bind a click function to an "click" element and append next "click" next to it.
+</h3>	
+<hr>
+<button>next</button>
+<span></span>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('button').click(function(){
+    $("span").append('<button>Next</button>');
+    });
+});
+</script>
+</body>
+</html>

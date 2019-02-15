@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 13 - Introduction to JQuery</title>
+	<style type="text/css">
+        label{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .div1{
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid grey;
+        }
+	</style>
+</head>
+
+<body>
+	<h1>Question  13</h1>
+<h3>Get the max height of elements using jquery each method.</h3>
+
+<hr>
+<div>
+    <div class="div1" style="height: 50px">
+        Height is :50
+    </div>
+    <div class="div1" style="height: 100px">
+        Height is :100
+    </div>
+    <div class="div1" style="height: 75px">
+       Height is : 75
+    </div>
+    <span>
+        
+    </span>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var max = 0;
+    $(".div1").each(function() {
+        var height = parseInt($(this).height()); 
+        max = height > max ? height : max;
+    });
+    $('span').append("Max Height is :"+max);
+});
+</script>
+</body>
+</html>

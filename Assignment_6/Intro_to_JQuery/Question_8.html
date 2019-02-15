@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 8 - Introduction to JQuery</title>
+	<style type="text/css">
+		button{
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Question  8</h1>
+<h3>Click event not working on element which added dynamicly or via script, make it work using .on method.
+</h3>	
+<hr>
+
+<label>Click on the add the button :</label>
+<button id="add">CLICK ME TO ADD ELEMENT</button>
+<button id="Activate" style="display: none;">Click me to activate </button>
+<span></span>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#add').click(function(){
+    $("#Activate").css('display','inline');	
+    $("span").append('<button id="btnCreated" disabled>Next</button>');
+    $	('#add').remove();
+    });
+    $('#Activate').click(function(){
+    	$('#Activate').remove();
+    	$('#btnCreated').attr("disabled",false);
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 14 - Introduction to JQuery</title>
+	<style type="text/css">
+        label{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        td,th{
+        	padding: 10px;
+        	background-color: #CCC;
+        	border-radius: 5px;
+        	text-align: center;
+        }
+        table{
+ 			width: 25%;
+         }
+        button{
+        	padding: 5px;
+        	margin:10px;
+        }
+	</style>
+</head>
+
+<body>
+	<h1>Question  14</h1>
+<h3>Chagne color of every cell which has numberl larger than 10.</h3>
+<hr>
+<div>
+	<button>Click me to do opration :</button>
+</div>
+<table>
+	<caption>Table Cell Color Change</caption>
+	<thead><tr><th colspan="5"> Changed Color no > 10</th></tr></thead>
+	<tbody>
+		<tr>
+			<td>12</td><td>4</td><td>16</td><td>8</td><td>30</td>
+		</tr>
+		<tr>	
+			<td>6</td><td>12</td><td>9</td><td>30</td><td>3</td>
+		</tr>
+		<tr>	
+			<td>3</td><td>3</td><td>12</td><td>4</td><td>32</td>
+		</tr>
+		<tr>		
+			<td>50</td><td>30</td><td>7</td><td>12</td><td>0</td>
+		</tr>	
+			<td>30</td><td>8</td><td>23</td><td>8</td><td>12</td>
+		</tr>
+	</tbody>
+</table>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('button').click(function(e){
+     	$("td").each(function(){
+     		var val=$(this).text();
+     		if(val>10)
+     		{
+     			$(this).css('background-color','green');
+     		}
+     	});
+    });
+});
+</script>
+</body>
+</html>

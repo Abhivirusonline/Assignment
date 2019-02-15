@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 6 - Introduction to JQuery</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+</head>
+<body>
+<H5>After page load change the HTML of div element with "p" element </H5>	
+
+<div>
+	this is div content
+</div>
+<br><br/>
+
+
+<p>
+	this is paragraph.
+</p>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("div").html($('p').text());
+});
+</script>
+</body>
+</html>

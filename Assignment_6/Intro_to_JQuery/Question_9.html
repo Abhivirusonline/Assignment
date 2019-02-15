@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 9 - Introduction to JQuery</title>
+	<style type="text/css">
+		button{
+			margin: 10px;
+		}
+        label{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        div{
+            height: 400px;
+            border-radius: 15px;
+            border: 1px solid grey;
+        }
+	</style>
+</head>
+
+<body>
+	<h1>Question  9</h1>
+<h3>Get dropdown selected value on onchanage event and append in div container.
+</h3>	
+<hr>
+<label>Select the dropdown to add it into div</label>
+<select class="dropdown">
+    <option>OPTION 1</option>
+    <option>OPTION 2</option>
+    <option>OPTION 3</option>
+    <option>OPTION 4</option>
+    <option>OPTION 5</option>
+    <option>OPTION 6</option>
+    <option>OPTION 7</option>
+</select>
+<div>
+    <ul>
+        
+    </ul>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<script type="text/javascript">
+$(document).ready(function(){
+   $('select.dropdown').change(function(){
+    var ans="<li>"+$('select.dropdown :selected').text()+"</li>";
+    $('ul').append(ans);
+   });
+});
+</script>
+</body>
+</html>

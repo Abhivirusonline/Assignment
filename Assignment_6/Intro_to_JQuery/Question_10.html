@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 10 - Introduction to JQuery</title>
+	<style type="text/css">
+        label{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        div{
+            height: 400px;
+            border-radius: 15px;
+            border: 1px solid grey;
+        }
+        select,option{
+            padding: 7px;
+            margin: 2px;
+        }
+        option{
+            color:blue;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+        }
+	</style>
+</head>
+
+<body>
+	<h1>Question  10</h1>
+<h3>Create a dropdown menu using hover method in jquery.
+</h3>	
+<hr>
+<label>Hover me to add dropdown </label>
+<div>
+    
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var count=0;
+   $('label').hover(function(event){
+    var ans='<select class="dropdown">'
+        ans+='<option>OPTION 1</option>'
+        ans+='<option>OPTION 2</option>'
+        ans+='<option>OPTION 3</option>'
+        ans+='</select>';
+        $('div').append(ans);
+        count++;
+        if(count>=1)
+            $('label').unbind(event);
+        console.log(count);
+    
+   });
+});
+</script>
+</body>
+</html>

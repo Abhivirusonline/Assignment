@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 15 - Introduction to JQuery</title>
+	<style type="text/css">
+        label{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        td,th{
+        	padding: 10px;
+        	background-color: #CCC;
+        	border-radius: 5px;
+        	text-align: center;
+        }
+        table{
+ 			width: 25%;
+         }
+        button{
+        	padding: 5px;
+        	margin:10px;
+        	background-color: #4dcefa;
+        	border-radius: 5px;
+        }
+	</style>
+</head>
+
+<body>
+	<h1>Question  15</h1>
+<h3>Retrive the data from server using ajax get call.</h3>
+<hr>
+<label>You need to run this page on server</label>
+<label>Click the button to retrive data from server</label>
+<button>Click me</button>
+<span></span>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('button').click(function(){
+  	$.ajax({url:"./server.php",success:function(result){
+  		$('span').html(result);
+  	}});
+  });
+});
+</script>
+</body>
+</html>
