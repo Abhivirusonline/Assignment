@@ -8,9 +8,10 @@
             font-weight: 600;
         }
         div{
-            height: 400px;
+            height: 100px;
             border-radius: 15px;
             border: 1px solid grey;
+            padding: 10px;
         }
 	</style>
 </head>
@@ -20,14 +21,22 @@
 <h3>We have bind a click funtion to parent div but we want stop it from performing when user clicks on its child li.</h3>
 
 <hr>
-
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<div>
+    this is  div
+    <ul>
+        <li>LIST ITEM 1</li>
+        <li>LIST ITEM 1</li>
+        <li>LIST ITEM 1</li>
+        <li>LIST ITEM 1</li>
+    </ul>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-    $('a').click(function(e){
-        e.preventDefault();
-    });
+$('div').click(function(){alert("Parent is clicked");})
+.children().click(function(){
+    return false;
+}).attr('disabled',true);
 });
 </script>
 </body>
