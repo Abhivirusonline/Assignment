@@ -1,0 +1,129 @@
+*{margin: 0;}
+.container{
+    padding:40px 30px;
+}
+.header{
+
+}
+.logo{float: left;width: 20%;}
+.newertime{width: 80%;float: left;}
+.newertime img{
+    width: 100%;
+}
+.buzz{
+    margin:30px 40% 20px;
+}
+.image_of_events{
+    height: 200px;
+    width: 100%;
+}
+.left_image {
+    display: block;
+    width: 50%;
+    float: left;
+}
+.left_image img{
+    width: 95%;
+}
+.right_image{
+    width: 50%;
+    float: left;
+}
+.right_image div img{
+    width: 100%;
+}
+.newspapers {
+    background-color:#f3f3f3;
+    clear:both;
+    height: 200px;
+}
+.our_headlines{
+    width: 50%;
+    float: left;
+    height: 200px;
+}
+.our_headlines .grad
+{
+    margin-top: 2px;
+    width:50%;
+    padding: 5px;
+    color: #fff;
+    background-image: linear-gradient(to right,#dc007a ,#3e0ea0);
+}
+.newspapers_logos
+{
+    height: 200px;
+    width: 50%;
+    float: left;
+}
+.blogs{
+    background-color: #ccc;
+    padding: 30px;
+    word-wrap: break-word;
+}
+.blogs div > h2{
+    margin: 10px 39%;
+}
+.blogs .left_blog{
+    width: 50%;
+    float: left;
+}
+.blogs .left_blog p:last-child, .blogs .right_blog p:last-child{
+    color: #f00;
+}
+.newClients{
+    color: #fff;
+    padding: 20px;
+    background-image: linear-gradient(to right,#dc007a ,#3e0ea0);
+    height: 200px;
+}
+.newClients div{
+
+}
+.h1{
+    background-color: #fff;
+    color: #de0082;
+    font-size: 3em;
+    margin: 0.67em 0;
+    font-weight: bold;
+}
+#new_id{
+    font-size: 3em;
+    margin: 0.67em 0;
+    font-weight: bold;
+}
+.clients_logo{
+
+    float: right;
+    width: 45%;
+    text-align:left;
+}
+.clients_logo div img{
+    float: left;
+    width: auto;;
+   height: auto;
+}
+.social_icon{
+    min-width: 320px;
+    padding: 30px 38% 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+.social_icon ul
+{
+    list-style-type: none;
+}
+.social_icon ul li{
+    float: left;
+    border:2px solid black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.social_icon ul li img{
+    padding: 5px 0px;
+    height: 40px;
+    width: 40px;
+}
