@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 4</title>
+    <style>
+        *{margin:0;}
+        .image{
+            width: 50%;
+            float: left;
+
+        }
+        .image img {
+            margin: 20px;
+        }
+        .assignment{
+            width: 50%;
+            float: left;
+        }
+        .assignment table caption{
+            margin-bottom: 15px;
+        }
+        .assignment .table table{
+            border:5px outset #d1cfc5;
+            margin: 20px;
+            background-color: #d1cfc5;
+            color: #683032;
+        }
+        th, td {
+            padding: 5px;
+            padding-right: 30px;
+            border: 0px ridge #8C8C8C;
+            background-color: #fff;
+        }
+        th{
+            background-color: #ff0;
+        }
+        .table{
+            padding-bottom: 1px;
+            width: 550px;
+            background-image: url('./Assets/unnamed.png');
+            margin: 20px 50px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="Question">
+        <h1>Create a table referring to the image</h1>
+        <hr>
+    </div>
+    <div class="image">
+        <img src="./Assets/Assignment4.png" alt="">
+    </div>
+    <div class="assignment">
+        <div class="table">
+            <table>
+                <caption>Race Result</caption>
+                <thead>
+                <tr>
+                    <th colspan="2">Runner</th> <th>Time</th> <th>Origin</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="3" style="background-color: #9dbcff">Men</td><td>1. Peter Teagan</td><td>2:12:34</td><td>San Antonio, Texas</td>
+                </tr>
+                <tr>
+                    <td>2. Kyle Wills</td><td>2:13:05</td><td>Billings, Montana</td>
+                </tr>
+                <tr>
+                    <td>3. Jason Wu</td><td>2:14:28</td><td>Cutler, Colorado</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="background-color: #77ff95;">Women</td><td>1. Laura Blake</td><td>2:28:21</td><td>Park City, Colorado</td>
+                </tr>
+                <tr>
+                    <td>2. Kathy Lasker</td><td>2:30:11</td><td>Chicago, Illinois</td>
+                </tr>
+                <tr>
+                    <td>3. Lisa Peterson</td><td>2:31:14</td><td>Seattle, Washington</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
