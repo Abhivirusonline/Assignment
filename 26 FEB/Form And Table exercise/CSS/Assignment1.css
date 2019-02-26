@@ -1,0 +1,21 @@
+*{margin:0;}
+.container table{
+    color: #683032;
+    margin-top: 20px;
+    margin-left: -100px;
+}
+.image{
+    width: 50%;
+    float: left;
+
+}
+.image img {
+    margin: 20px;
+}
+.assignment{
+    width: 50%;
+    float: left;
+}
+td{
+    padding: 5px;
+}

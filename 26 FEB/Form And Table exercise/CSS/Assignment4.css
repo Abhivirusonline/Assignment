@@ -1,0 +1,37 @@
+*{margin:0;}
+.image{
+    width: 50%;
+    float: left;
+
+}
+.image img {
+    margin: 20px;
+}
+.assignment{
+    width: 50%;
+    float: left;
+}
+.assignment table caption{
+    margin-bottom: 15px;
+}
+.assignment .table table{
+    border:5px outset #d1cfc5;
+    margin: 20px;
+    background-color: #d1cfc5;
+    color: #683032;
+}
+th, td {
+    padding: 5px;
+    padding-right: 30px;
+    border: 0px ridge #8C8C8C;
+    background-color: #fff;
+}
+th{
+    background-color: #ff0;
+}
+.table{
+    padding-bottom: 1px;
+    width: 550px;
+    background-image: url('../Assets/unnamed.png');
+    margin: 20px 50px;
+}

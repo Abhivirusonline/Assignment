@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 6</title>
+    <style>
+        *{margin:0;}
+        .image{
+            width: 50%;
+            float: left;
+
+        }
+        .image img {
+            margin: 20px 10px;
+        }
+        .assignment{
+            width: 50%;
+            float: left;
+
+        }
+        .form_background
+        {
+            margin: 20px 10px;
+            padding: 20px 50px 20px;
+            background-color: #666d8a;
+        }
+        .main_container{
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            background-color: #f2f1f7;
+            padding: 30px;
+        }
+        .name{
+            padding: 20px 0px;
+            margin-bottom: 30px;
+        }
+        .name input[type="text"]{
+            width: 40%;
+            float: left;
+            padding: 10px;
+            margin-right: 50px;
+        }
+        .name input[name="lname"]
+        {
+            margin-right: 0px;
+        }
+        .input_group{
+            padding: 10px 0;
+        }
+        .input_group input[type="email"],.input_group input[type="password"],input[type="submit"]{
+
+            padding: 10px;
+            width: auto;
+            width: 95%;
+        }
+        .input_group a{
+            text-decoration: none;
+            color: #19b149;
+        }
+        input[type="submit"]
+        {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 5px;
+            background-color: #19b149;
+        }
+        .sign_in{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .sign_in p,.sign_in p a{
+            text-align: center;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="Question">
+        <h1>Q6 : Create a form like this.</h1>
+        <hr>
+    </div>
+    <div class="image">
+        <img src="Assets/Assignment6.png" alt="">
+    </div>
+    <div class="assignment">
+        <div class="form_background">
+            <div class="main_container">
+                <div class="Register">
+                   <div style="width: 30%; float:left;">
+                       <hr>
+                   </div>
+                    <div style="width: 40%; float:left; color:#636363;">
+                        <h1 style="margin:-20px 25% 0px;">Register</h1>
+                    </div>
+                    <div style="width: 30%; float:left;">
+                        <hr>
+                    </div>
+
+                </div>
+
+                <div style="clear:both; text-align:center; color:#9a9db3;">
+                    <p>
+                        Create your account. It's free and take only a minute.
+                    </p>
+                </div>
+
+                <div class="name">
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>
+                
+                <div class="input_group">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="input_group">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="input_group">
+                    <input type="password" name="password2" id="password2" placeholder="Confirm Password">
+                </div>
+
+                <div class="input_group">
+                    <input type="checkbox"> <label> I Accept the <span><a href="javascript:void(0)">Terms of Use</a></span> & <span> <a
+                        href="javascript:voiid(0)">Privacy policy.</a></span></label>
+                </div>
+                <div class="input_group">
+                    <input type="submit" name="submit"value="Register Now">
+                </div>
+            </div>
+            <div class="sign_in">
+                <p>
+                    Already have an account? <span><a href="javascript:void(0)">Sign in</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{margin:0;}
+.image{
+    width: 50%;
+    float: left;
+
+}
+.image img {
+    margin: 20px;
+}
+.assignment{
+    width: 50%;
+    float: left;
+}
+.assignment table caption{
+    margin-bottom: 15px;
+}
+.assignment .table table{
+    padding: 2px;
+    border:5px outset #d1cfc5;
+    margin: 20px;
+    color: #683032;
+}
+th, td {
+    border: 1px ridge grey;
+}
+.table{
+    padding-bottom: 1px;
+    width: 410px;
+    background-image: url('../Assets/unnamed.png');
+    margin: 20px 50px;
+}

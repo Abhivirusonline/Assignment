@@ -1,0 +1,31 @@
+*{margin:0;}
+.image{
+    width: 50%;
+    float: left;
+
+}
+.image img {
+    width: 500px;
+    margin: 20px;
+}
+.assignment{
+    width: 50%;
+    float: left;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.outerTable
+{
+    border-collapse: collapse;
+    border:1px solid black;
+}
+.table
+{
+    margin-top: 21px;
+}
