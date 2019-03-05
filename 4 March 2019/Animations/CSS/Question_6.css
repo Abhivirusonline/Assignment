@@ -1,0 +1,23 @@
+body h1{
+    border-bottom: 1px solid #bdbdbd;
+}
+.container{
+    height: 100px;
+    width: 100px;
+    background-color: #ff0;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 2;
+}
+@keyframes slidein {
+    0%{
+        opacity: 1;
+        }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}

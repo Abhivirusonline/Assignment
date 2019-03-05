@@ -1,0 +1,17 @@
+body h1{
+    border-bottom: 1px solid #bdbdbd;
+}
+.container{
+    width: 200px;
+    height: 100px;
+    background: #f0f;
+    border:1px solid #000;
+    transition: width 3s, height 3s, transform 3s;
+}
+.container:active{
+    width: 100px;
+    height:200px;
+    background-color:#000;
+    border:2px solid #f0f;
+    transform:scale(2,3);
+}
