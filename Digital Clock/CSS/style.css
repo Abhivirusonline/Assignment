@@ -1,0 +1,46 @@
+*{margin: 0;background-color: #2f74c7;}
+.container{
+    text-align: center;
+    padding: 50px 30px 0;
+}
+h1{
+    font-size: 5vw;
+}
+h1,h2{
+    color: #fff;
+}
+.disp-time #time,.disp-time #convention{
+    color: #fff;
+    font-size: 10vw;
+    padding: 10px;
+}
+
+.message:after{
+    content: '';
+    border-bottom: 18px solid #fff;
+    width: 10%;
+    left: 44%;
+    position: absolute;
+}
+.disp-time{
+    margin-top: 100px;
+}
+.disp-date{
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 3vw;
+}
+@media only screen and (max-width: 675px) {
+    .message:after{
+        content:'';
+        border-bottom: 15px solid #fff;
+        width: 80px;
+        left: 40%;
+        position: absolute;
+        margin-top: 20px;
+    }
+    .disp-time{
+        margin-top: 40px;
+
+    }
+}
