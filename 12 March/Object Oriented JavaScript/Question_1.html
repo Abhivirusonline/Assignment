@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 1</title>
+    <style>
+    *{
+        margin: 0;
+    }
+    .container-code{
+        padding: 30px 30px;
+        background-color: #ccc;
+    }
+    </style>
+</head>
+<body>
+<h1>
+    Q1:  Create a hierarchy of person, employee and developers.
+</h1>
+<hr>
+<strong>Answer :</strong>
+<p>With the help of prototype, one object can refer to the other object’s prototype which usually contains the references for the existing data.</p>
+<strong>Code :</strong> <a href="./JS/Question_1.js" target="_blank">Link to JS Code</a> <br>
+<div class="container-code">
+<code>
+
+    function Person(name,age){                 <br>
+    this.name=name;                             <br>
+    this.age=age;                               <br>
+    }                                           <br>
+                                                 <br>
+    function Employee(salary){                   <br>
+    this.salary=salary;                         <br>
+    }                                             <br>
+    function Developers(comp){                  <br>
+    this.comp=comp;                             <br>
+    }                                               <br>
+    Employee.prototype=new Person("Abhi",22);        <br>
+    Developers.prototype=new Employee("5000")           <br>
+    var dev=new Developers("FEEN");                     <br>
+    console.log(dev.name);	 //show only name                 <br>
+    console.log(dev);                                   <br>
+
+</code>
+</div>
+</body>
+</html>

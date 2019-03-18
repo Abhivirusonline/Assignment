@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 3</title>
+    <style>
+        .example{
+            padding: 30px 20px;
+            background-color: #2b2b2b;
+        }
+        code,h3{
+            color: #fff;
+        }
+        .opencode{
+            padding:0 5px;
+            display: inline;
+            background-color: #14d347;
+        }
+        .opencode a{
+            color: #e4e4e4;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Q2: Explain difference between Bind and Call (example).
+</h1>
+<hr>
+<div class="call">
+    <h1>Call : </h1>
+    <p>
+        In Javascript all functions are object methods.
+        The call() method is a predefined JavaScript method. It can be used to call a method with
+        an owner object as an argument.
+        <strong> With call() is used when the invocation of function is required immediately after modification of context. </strong>
+    </p>
+    <div class="example">
+        <h3>Example : </h3>
+        <code>
+            var person = {  <br>
+            name: "Jitender Singh",  <br>
+            hello: function(thing) {   <br>
+            console.log(this.name + " says hello " + thing); <br>
+            }   <br>
+            }    <br>
+            person.hello("world");<br>
+            person.hello.call({ name: "Abhishek Yadav" }, "world"); <br>
+        </code>
+        <div class="opencode">
+            <a href="./JS/Question_3.js" target="_blank"> Open JS code</a>
+        </div>
+        <h3 id="call">Output : </h3>
+        <p></p>
+    </div>
+</div>
+
+<div class="call">
+    <h1>Bind : </h1>
+    <p>
+        In Javascript all functions are object methods.
+        The bind() method is a predefined JavaScript method. It can be used to call a method with
+        an owner object as an argument.
+        <strong> With bind() is used when the invocation of function is not required immediately after modification of context. </strong>
+    </p>
+    <div class="example">
+        <h3>Example : </h3>
+        <code>
+            var person = {  <br>
+            name: "Jitender Singh",    <br>
+            hello: function(argument) {    <br>
+            console.log(this.name + " says hello " + argument);    <br>
+            }   <br>
+            }   <br>
+            person.hello("world");  <br>
+            var helloFunc = person.hello.bind({ name: "Abhishek Yadav" });   <br>
+            helloFunc("world");  <br>
+        </code>
+        <div class="opencode">
+            <a href="./JS/Question_3.js" target="_blank"> Open JS code</a>
+        </div>
+        <h3 id="bind-1">Output : </h3>
+        <p></p>
+    </div>
+</div>
+<script src="./JS/Question_3.js"></script>
+</body>
+</html>
