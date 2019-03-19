@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 1</title>
+    <style>
+        .container{
+            background-color: #ccc;
+            padding: 5px 10px;
+        }
+        .container-code{
+            background-color: #0f8791;
+            padding: 20px 50px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Q.1 : Given this array: [3,62,234,7,23,74,23,76,92], Using arrow function, create an array of the numbers greater than 70.
+</h1>
+<hr>
+<div class="container">
+    <div class="container-code">
+        <code>
+            let myFun = (arr) => {                                           <br>
+            var c=0;                                                         <br>
+            var ar=[];                                                       <br>
+            for(var i=0; i &lt; arr.length;i++){                                   <br>
+            if(arr[i]>70)                                                    <br>
+            ar[c++]=arr[i];                                                  <br>
+            }                                                                <br>
+            return ar;                                                       <br>
+            };                                                               <br>
+            var ans=myFun([3,62,234,7,23,74,23,76,92]);                       <br>
+            console.log(ans);                                                 <br>
+        </code>
+    </div>
+
+</div>
+<script>
+    let myFun = (arr) => {
+        var c=0;
+        var ar=[];
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]>70)
+                ar[c++]=arr[i];
+        }
+        return ar;
+    };
+    var ans=myFun([3,62,234,7,23,74,23,76,92]);
+    console.log(ans);
+</script>
+</body>
+</html>

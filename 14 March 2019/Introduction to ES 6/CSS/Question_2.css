@@ -1,0 +1,29 @@
+.quest{
+    padding: 5px 20px 5px 50px;
+    font-family: times-new-roman;
+    font-size: 17px;
+    background-color: #30827a;
+}
+#model{
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 200px;
+    background-color: #e0e0e0;
+    right: 50px;
+    bottom: 150px;
+    border-radius: 20px;
+    opacity: 0.7;
+    padding: 10px 20px;
+    word-wrap: break-word;
+}
+@media only screen and (max-width: 675px){
+  #model{
+      opacity: 0.8;
+      bottom: unset;
+      top:50px;
+  }
+}
+#ID{
+    display: none;
+}

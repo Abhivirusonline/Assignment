@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 2</title>
+    <style>
+        *{margin: 0;}
+        .container{
+            padding: 5px 10px;
+        }
+        li a{
+            text-decoration: none;
+        }
+        li:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="CSS/Question_2.css">
+</head>
+<body>
+<h1>
+    Q.2 : The list is given Below. <span><a href="./JS/Question_2.js" target="_blank">OPEN JS FILE</a></span>
+</h1>
+    <div class="quest">
+        &lt;ul> <br>
+            &lt;li data-time="5:17">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="8:22">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="3:34">Redux Video &lt;/li>    <br>
+            &lt;li data-time="5:23">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="7:12">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="7:24">Redux Video &lt;/li>    <br>
+            &lt;li data-time="6:46">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="4:45">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="4:40">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="7:58">Redux Video &lt;/li>    <br>
+            &lt;li data-time="11:51">Flexbox Video &lt;/li> <br>
+            &lt;li data-time="9:13">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="5:50">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="5:52">Redux Video &lt;/li>    <br>
+            &lt;li data-time="5:49">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="8:57">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="11:29">Flexbox Video &lt;/li> <br>
+            &lt;li data-time="3:07">Flexbox Video &lt;/li>  <br>
+            &lt;li data-time="5:59">Redux Video &lt;/li>    <br>
+            &lt;li data-time="3:31">Flexbox Video &lt;/li>  <br>
+        &lt;/ul>
+    </div>
+<ul id="ID">
+    <li data-time="5:17">Flexbox Video</li>
+    <li data-time="8:22">Flexbox Video</li>
+    <li data-time="3:34">Redux Video</li>
+    <li data-time="5:23">Flexbox Video</li>
+    <li data-time="7:12">Flexbox Video</li>
+    <li data-time="7:24">Redux Video</li>
+    <li data-time="6:46">Flexbox Video</li>
+    <li data-time="4:45">Flexbox Video</li>
+    <li data-time="4:40">Flexbox Video</li>
+    <li data-time="7:58">Redux Video</li>
+    <li data-time="11:51">Flexbox Video</li>
+    <li data-time="9:13">Flexbox Video</li>
+    <li data-time="5:50">Flexbox Video</li>
+    <li data-time="5:52">Redux Video</li>
+    <li data-time="5:49">Flexbox Video</li>
+    <li data-time="8:57">Flexbox Video</li>
+    <li data-time="11:29">Flexbox Video</li>
+    <li data-time="3:07">Flexbox Video</li>
+    <li data-time="5:59">Redux Video</li>
+    <li data-time="3:31">Flexbox Video</li>
+</ul>
+
+<hr>
+<div class="container">
+    <ol>
+
+        <li> <a onmouseover="showModel(0)" onmouseout="hideModel()" href=""target="_blank">Select all the list items on the page and convert to array.</a></li>
+        <li> <a onmouseover="showModel(1)" onmouseout="hideModel()" href=""target="_blank">Filter for only the elements that contain the word 'flexbox'</a></li>
+        <li> <a onmouseover="showModel(2)" onmouseout="hideModel()" href=""target="_blank">map down to a list of time strings</a></li>
+        <li> <a onmouseover="showModel(3)" onmouseout="hideModel()" href=""target="_blank">map to an array of seconds</a></li>
+        <li> <a onmouseover="showModel(4)" onmouseout="hideModel()" href=""target="_blank">reduce to get total using .filter and .map</a></li>
+    </ol>
+</div>
+<div id="model">
+    <div id="content">
+
+    </div>
+</div>
+<script src="JS/Question_2.js"></script>
+</body>
+</html>

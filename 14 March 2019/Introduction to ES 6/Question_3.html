@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create a markup using JS</title>
+    <style>
+        .container-code{
+            background-color: #07a489;
+            padding: 10px 30px;
+            border-radius: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSS/Question_3.css">
+</head>
+<body>
+<h1>
+    Q3 : Create a markup template using string literal . <br>
+<code>
+    const song = {                                                  <br/>
+    name: 'Dying to live',                                          <br/>
+    artist: 'Tupac',                                                <br/>
+    featuring: 'Biggie Smalls'                                      <br/>
+    };
+</code>
+</h1>
+<hr>
+<div class="container-code">
+    <code>
+        const song = {                                              <br>
+        name: 'Dying to live',                                      <br>
+        artist: 'Tupac',                                            <br>
+        featuring: 'Biggie Smalls'                                  <br>
+        };                                                          <br>
+        const markup = `
+        <div class="song">
+            <p>${song.name} <span> - ${song.artist}</span></p>
+            <p>(Featuring ${song.featuring})</p>
+        </div>
+        `;                                                            <br>
+        document.getElementsByClassName('container-code')[0].innerHTML+=markup;
+    </code>
+    <hr>
+    <h2>Output</h2>
+</div>
+<script src="./JS/Question_3.js"></script>
+</body>
+</html>
