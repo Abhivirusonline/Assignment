@@ -6,12 +6,50 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Question 3 :: Inheritance upto 3 level</title>
+    <style>
+        .container-code{
+            font-size: 18px;
+            color: #201ba4;
+            background-color: #c6c6c6;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
 <h1>
     Q3: Write a program to implement inheritance upto 3 classes.The Class must  public variables and static functions.
 </h1>
 <hr>
+<div class="container-code">
+<xmp>
+    class Shape {
+    constructor(argument1){
+    this.argument1=argument1;
+    }
+    }
+    class Rectangle extends Shape{
+    constructor(length,width){
+    super(length);
+    this.width=width;
+    }
+    area=()=>this.argument1*this.width;
+    }
+    class coloredRect extends Rectangle{
+    constructor(length,width,color){
+    super(length,width);
+    this.color=color;
+    }
+    colReact=()=>{
+    return this.color;
+    }
+    }
+    let cr=new coloredRect(15,20,"red");
+    console.log("Rectangle color : "+cr.colReact());
+    console.log("Rectangle area :"+cr.area());
+    console.log("Value inside Shape class : "+cr.argument1);
+</xmp>
+</div>
 <script src="./JS/Question_3.js"></script>
 </body>
 </html>
