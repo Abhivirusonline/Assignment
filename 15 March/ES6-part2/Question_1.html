@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 1 : Unique array members using set</title>
+    <style>
+        .container{
+            background-color: #1eaf67;
+            padding: 15px 30px;
+        }
+        .container-code{
+            font-size: 18px;
+            color: #201ba4;
+            background-color: #c6c6c6;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Q1: Filter unique array members using Set.
+</h1>
+<hr>
+<div class="container">
+    <div class="array">
+        <b>Array Elements : </b>
+    </div>
+    <ul></ul>
+    <strong>Code : </strong>
+    <div class="container-code">
+        <code>
+            var arr = [1,2,3,4,5,6,5,7,4];                                              <br>
+            document.getElementsByClassName('array')[0].innerHTML+=arr;                 <br>
+            var set1 = new Set(arr);                                                    <br>
+            for (var item of set1.values())                                             <br>
+            document.getElementsByTagName("ul")[0].innerHTML+="&lt;li>"+item+"&lt;/li>";<br/>
+        </code>
+    </div>
+</div>
+<script src="./JS/Question_1.js"></script>
+</body>
+</html>

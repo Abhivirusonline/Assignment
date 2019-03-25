@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 7</title>
+    <style>
+        .container{
+            background-color: #1eaf67;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .container-code{
+            font-size: 18px;
+            color: #201ba4;
+            background-color: #c6c6c6;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Q7: Write a program to flatten a nested array to single level using arrow functions.
+</h1>
+<hr>
+<div class="container">
+    <h4>OUTPUT :: </h4>
+    <p id="flatter">hii</p>
+</div>
+<div class="container-code">
+    <h4>JS CODE :: </h4>
+    <xmp>
+        let flatten = (arr) =>
+        {
+            var array = [];
+            while(arr.length) {
+                var value = arr.shift();
+                if(Array.isArray(value)) {
+                    // this line preserve the order
+                    arr = value.concat(arr);
+                } else {
+                    array.push(value);
+            }
+            }
+            return array;
+        }
+        document.getElementById('flatter').innerHTML=array;
+
+    </xmp>
+</div>
+<script src="./JS/Question_7.js"></script>
+</body>
+</html>

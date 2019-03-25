@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 2 :: Maximum combination of string</title>
+    <style>
+        .container{
+            background-color: #1eaf67;
+            padding: 15px 30px;
+        }
+        .container-code{
+            font-size: 18px;
+            color: #201ba4;
+            background-color: #c6c6c6;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Q2 : Find the possible combinations of a string and store them in a MAP?
+</h1>
+<hr>
+<div class="container">
+
+    <strong>Code : </strong>
+    <div class="container-code">
+<xmp>
+             var allArrays = [['a', 'b'], ['c'], ['d', 'e', 'f']]
+
+             function allPossibleCases(arr) {
+             if (arr.length == 1) {
+                return arr[0];
+             } else {
+                var result = [];
+                var allCasesOfRest = allPossibleCases(arr.slice(1));  // recur with the rest of array
+                for (var i = 0; i < allCasesOfRest.length; i++) {
+                    for (var j = 0; j < arr[0].length; j++) {
+                        result.push(arr[0][j] + allCasesOfRest[i]);
+                    }
+                }
+                return result;
+             }
+             }
+             var a=[];
+             a=allPossibleCases(allArrays);
+             let map = new Map();
+             map.set(a,a);
+             console.log(map.get(a));
+
+
+         </xmp>
+    </div>
+</div>
+<script src="./JS/Question_2.js"></script>
+
+</body>
+</html>

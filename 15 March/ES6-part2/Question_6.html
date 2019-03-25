@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 6</title>
+    <style>
+    .container{
+    background-color: #1eaf67;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+    .container-code{
+    width: 100%;
+    font-size: 16px;
+    color: #201ba4;
+    background-color: #c6c6c6;
+    padding: 10px 0px 10px 10px;
+    border-radius: 20px;
+    }
+    </style>
+</head>
+<body>
+<h1>
+    Q6:Import a module for filtering unique elements in an array. <a href="./JS/Question_6.js">JS CODE</a>
+</h1>
+<hr>
+<div class="container">
+    <h4>OUTPUT :: </h4>
+    <p id="unique"></p>
+</div>
+<div class="container-code">
+    <h4>JS CODE :: </h4>
+    <xmp>
+        let unique = () =>
+        {
+        var a = [2,5,5,7,3,9,8,9];
+        return [...new Set(a)];
+        }
+        document.getElementById("cylinder").innerHTML = "Original Array = [2,5,5,7,3,9,8,9] <br /> and Unique Array = " + unique();
+    </xmp>
+</div>
+<script src="./JS/Question_6.js"></script>
+</body>
+</html>

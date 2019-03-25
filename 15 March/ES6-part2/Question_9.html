@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 9</title>
+    <style>
+        .container{
+            background-color: #1eaf67;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .container-code{
+            font-size: 18px;
+            color: #201ba4;
+            background-color: #c6c6c6;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Q9:Implement Map and Set using Es6?
+</h1>
+<hr>
+<div class="container">
+    <h4>OUTPUT :: </h4>
+    <p id="output"></p>
+</div>
+<div class="container-code">
+    <h4>JS CODE :: </h4>
+    <xmp>
+var map = new Map();
+map.set("First Name", "Joyesh");
+map.set("Last Name", "Malik");
+map.set("Competency", "FEEN");
+for(var item of map.entries())
+{
+   document.getElementById("output").innerHTML+="<li>"+item+"</li>";
+}
+    </xmp>
+</div>
+<script src="./JS/Question_9.js"></script>
+</body>
+</html>

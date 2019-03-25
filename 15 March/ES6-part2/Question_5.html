@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 5</title>
+    <style>
+        .container{
+            background-color: #1eaf67;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .container-code{
+            width: 100%;
+            font-size: 16px;
+            color: #201ba4;
+            background-color: #c6c6c6;
+            padding: 10px 0px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Q5 : Import a module containing the constants and method for calculating area of circle, rectangle, cylinder.
+</h1>
+<hr>
+<div class="container">
+    <p id="circle"></p>
+    <p id="rectangle"></p>
+    <p id="cylinder"></p>
+</div>
+<div class="container-code">
+    <xmp>
+        const PI = 3.14;
+        let circle = () =>
+        {
+            let radius = 3;
+            return PI * radius * radius;
+        }
+        let rectangle = () =>
+        {
+            let length = 5;
+            let breadth = 6;
+            return length * breadth;
+        }
+        let cylinder = () =>
+        {
+            let radius = 5;
+            let height = 7;
+            return 2 * PI * radius * (height + radius);
+        }
+        document.getElementById("circle").innerHTML = "Area of circle = " + parseFloat(circle()).toFixed(2) +" Unit Square";
+        document.getElementById("rectangle").innerHTML = "Area of rectangle = " + parseFloat(rectangle()).toFixed(2)+" Unit Square";
+        document.getElementById("cylinder").innerHTML = "Area of cylinder = " + parseFloat(cylinder()).toFixed(2) +" Unit Square";
+    </xmp>
+</div>
+
+<script type="text/javascript" src="./JS/Question_5.js"></script>
+</body>
+</html>
