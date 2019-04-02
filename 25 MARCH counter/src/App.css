@@ -1,0 +1,29 @@
+*{margin: 0;box-sizing: border-box;
+    text-align: center;
+}
+.counters{
+    width: 710px;
+    display: flex;
+    margin: 0 auto;
+}
+.Card{
+    padding:5px 10px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    height: 100px;
+    width: 200px;
+    background-color: #858585;
+}
+.Card span{
+    display:block;
+}   
+button{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #184e03;
+    border:none;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px 30px;
+}
