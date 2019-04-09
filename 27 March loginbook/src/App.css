@@ -1,0 +1,83 @@
+*{margin: 0; box-sizing: border-box;}
+.App {
+  text-align: center;
+  background-color: #9e9e9e;
+  padding-bottom: 30px;
+}
+input[type="text"],input[type="password"],input[type="submit"]{
+  padding: 12px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5px;
+  background-color: #59b8cc;
+}
+.link {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #243e50;
+}
+
+.login {
+  max-width: 40%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.books {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+.book {
+  min-height: 280px;
+  max-width: 150px;
+
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.BookDetail {
+  padding: 10px;
+  color: #243e50;
+}
+.thumbnail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+
+  margin-bottom: 10px;
+}
+.shortDescription {
+  padding: 15px;
+
+  margin-bottom: 10px;
+  min-height: 190px;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.itemDetail {
+  text-align: justify;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  margin-bottom: 10px;
+}
+.TopSection {
+  display: flex;
+  justify-content: flex-start;
+
+  align-content: flex-start;
+}
