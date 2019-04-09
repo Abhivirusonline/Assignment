@@ -1,0 +1,41 @@
+*{margin: 0; box-sizing: border-box;}
+.App {
+  text-align: center;
+  background-color: #9e9e9e;
+  padding-bottom: 30px;
+}
+input[type="text"],input[type="password"],input[type="submit"]{
+  padding: 12px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5px;
+  background-color: #59b8cc;
+}
+.link {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #243e50;
+}
+
+.login {
+  max-width: 40%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+
+
+.TopSection {
+  display: flex;
+  justify-content: flex-start;
+
+  align-content: flex-start;
+}
