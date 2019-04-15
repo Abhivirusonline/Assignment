@@ -1,0 +1,35 @@
+
+.left-items,.right-items{
+    display: flex;
+    align-items: center;
+}
+.left-items{
+    margin-left: 10px;
+}
+.right-items{
+    margin-right:10px;
+    justify-content: space-around;
+    flex-basis: 60%;
+}
+.profile-link{
+    display: flex;
+}
+.search-box{
+    flex-basis: 55%;
+}
+.bar_icon{
+
+}
+
+@media only screen and(max-width: 992px) {
+    .search-bar{
+        display: none;
+    }
+    .nav-link{
+        display: none;
+    }
+    .bar_icon{
+        display: block;
+        margin-right: 20px;
+    }
+}
