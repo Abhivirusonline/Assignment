@@ -1,0 +1,33 @@
+body{
+  background-color: #04969c;
+}
+.App {
+    margin-top: 30px;
+    padding-left: 50px;
+}
+table {
+    margin-top: 20px;
+    width: 400px;
+    border-collapse: collapse;
+}
+table, th, td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+select{
+    padding: 10px;
+    background-color: #b4b4b4;
+    border:none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 19px;
+}
+select:active{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+select option{
+    padding: 2px;
+    font-size: 19px;
+}
