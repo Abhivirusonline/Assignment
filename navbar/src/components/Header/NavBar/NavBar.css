@@ -1,0 +1,14 @@
+.nav-bar a{
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+}
+.nav-bar a:hover{
+    background-color: #063d6e;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #064e81;
+    padding: 10px 5px;
+}
